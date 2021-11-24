@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>WCE Student Management</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="inner_navbar">
+            <center> <img src="download.png" width="50" height="50" alt="WCE, Sangli" >
+            </center>
+            <div class="logo">
+                <a href="index.html"><h3>WCE Student Portal</h3></span></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html" class="active">Register</a></li>
+                    
+                   
+                    <li><a href="attendence.html">Attendence</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <br><br><br>
+    <h2>Student Registration form</h2>
+   
+  
+    <form name="myForm" method="post" onsubmit="return submitClick();">
+        <label >Full name:</label>
+        <input name="name" type="text" class="feedback-input" required placeholder="Full Name" />
+        <label>Mobile No.:</label>
+        <input name="mobNum" type="number" class="feedback-input"  minlength="10" maxlength="10" required placeholder="Mobile Number"  />
+        <label>Email:</label>
+        <input name="email" type="text" class="feedback-input" required placeholder="Email" />
+        <label>Address:</label>
+        <textarea name="text" class="feedback-input" required placeholder="Address"></textarea>
+        <label>Prn/User-Id:</label>
+        <input name="userID" type="text" class="feedback-input"required  placeholder="PRN/USER-ID" />
+        <label>Department:</label>
+        <input name="department" type="text" class="feedback-input" required placeholder="Department" />
+        <label>Class:</label>
+        <input name="class" type="text" class="feedback-input"required placeholder="Class" />
+        <label>Password:</label>
+        <input name="password" type="password" class="feedback-input" required placeholder="Password" minlength="8"/>
+        <span><label for="">User ID Proof:- </label> <input name="ID Proof" required accept="image/png, image/jpg" type="file"   placeholder="ID Proof / Photo" /></span>
+        <br><br>
+        <input type="submit" id="submit"value="SUBMIT" />
+    </form>
+</body>
+</html>
